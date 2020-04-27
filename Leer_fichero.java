@@ -49,6 +49,7 @@ public class Leer_fichero {//No es el mejor nombre para la clase, lo sé
     }
     
     public void escribir2(String nombreFichero, Persona p){
+        
         String cr = System.lineSeparator();
         try{
             FileWriter fichero= new FileWriter (nombreFichero,true);
@@ -59,8 +60,13 @@ public class Leer_fichero {//No es el mejor nombre para la clase, lo sé
             fichero.write("SIguiente");
             fichero.write("Prueba escritura"+cr);
             fichero.write("Me llamo "+ p.nombre+cr);
-            fichero.write("Tengo "+(char)p.edad+cr);
+            //fichero.write("Tengo "+(char)p.edad+cr);
+            String edad=Integer.toString(p.edad);//Creamos una variable String y llamamos al metodo q conviert ede int a string
+            fichero.write("Tengo "+edad+cr);
             fichero.write("Mido "+(char)p.altura+cr);
+            String altura=Integer.toString(p.altura);//Creamos una variable String y llamamos al metodo q conviert ede int a string
+            fichero.write("Mido "+altura+cr);
+            fichero.write("FIN ESCRITURA");
             fichero.close();
             System.out.print("CERRAMOS EL FICHERO"+ cr);
         

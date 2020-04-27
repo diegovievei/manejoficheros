@@ -15,16 +15,16 @@ public class Manejoficheros {
          // System.out.println("Altura");
         //int altura=teclado.nextInt();
         //Persona p=new Persona(nombre,edad,altura);
-        Persona p2=new Persona("Diego",18,178);
+        Persona p2=new Persona("Maria",27,178);
         Leer_fichero insertarpersona= new Leer_fichero();
         insertarpersona.escribir2(ficheroescritura, p2);
         
-//        Leer_fichero escribir= new Leer_fichero();
-        //escribir.escribir(ficheroescritura);
+     /* Leer_fichero escribir= new Leer_fichero();
+        escribir.escribir(ficheroescritura);*/
        
-        //Leer_fichero accediendo= new Leer_fichero();
-        //accediendo.lee(ficherolectura);        
-        
+        Leer_fichero accediendo= new Leer_fichero();
+        accediendo.lee(ficherolectura);        
+         // System.out.println("a");
        
 
     } // fin del main
